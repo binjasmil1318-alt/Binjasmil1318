@@ -1,0 +1,18 @@
+{
+  "fisik": {
+    "lari": [2.5, 2.7, 3.0],
+    "pushup": [20, 22, 25],
+    "situp": [30, 32, 35]
+  },
+  "psikotes": {
+    "skor": [70, 80, 75],
+    "riwayat": [
+      {"tanggal": "2025-12-10", "skor": 70},
+      {"tanggal": "2025-12-12", "skor": 80}
+    ]
+  },
+  "mental": {
+    "tantangan": ["Fokus 10 menit", "Bangun pagi"],
+    "checklist": [true, false]
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Latihan Mandiri Militer</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="site-logo">BINJASMIL1318</div>
+    <h1>Dashboard</h1>
+    <nav role="navigation" aria-label="Navigasi utama">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="psikotes.html">Psikotes</a>
+      <a href="edukasi.html">Edukasi</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <button id="darkModeBtn" class="btn btn-dark-toggle">Dark Mode</button>
+    </nav>
+  </header>
+  <section class="hero hero-dashboard">
+    <div class="hero-dashboard-inner">
+      <h2>Progress Latihan Kamu</h2>
+      <p class="dashboard-subtitle">Ringkasan latihan dari data yang tersimpan di perangkat ini. Gunakan target mingguan dan program 7 hari untuk menjaga konsistensi.</p>
+      <div id="progress-summary" class="card-grid">
+        <div class="card">
+          <h3>Fisik</h3>
+          <p id="fisik-progress">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Psikotes</h3>
+          <p id="psikotes-progress">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Mental & Disiplin</h3>
+          <p id="mental-progress">Loading...</p>
+        </div>
+      </div>
+      <div class="dashboard-section-card">
+        <h3>Jadwal Latihan Hari Ini</h3>
+        <ul id="jadwal-hari-ini">
+          <li>Loading...</li>
+        </ul>
+      </div>
+      <div class="dashboard-section-card">
+        <h3>Target Mingguan</h3>
+        <form id="formTarget" class="target-form">
+          <label>
+            Lari (km)
+            <input type="number" id="targetLari" min="0" step="0.5">
+          </label>
+          <label>
+            Push Up (x)
+            <input type="number" id="targetPushup" min="0" step="1">
+          </label>
+          <label>
+            Sesi Psikotes
+            <input type="number" id="targetPsikotes" min="0" step="1">
+          </label>
+          <label>
+            Hari Disiplin
+            <input type="number" id="targetDisiplin" min="0" step="1">
+          </label>
+          <button type="submit" class="btn target-save-btn">Simpan Target</button>
+        </form>
+        <p id="targetInfo" class="small-info"></p>
+        <ul id="target-mingguan">
+          <li>Loading...</li>
+        </ul>
+      </div>
+      <div class="dashboard-section-card">
+        <h3>Program 7 Hari Disiplin</h3>
+        <div class="program-card">
+          <p>Centang tugas setiap hari untuk membangun kebiasaan latihan.</p>
+          <ul id="program-7hari"></ul>
+        </div>
+      </div>
+      <div class="dashboard-charts">
+        <div class="chart-box">
+          <h3>Grafik Progres Fisik</h3>
+          <canvas id="progressChart" width="320" height="180"></canvas>
+        </div>
+        <div class="chart-box">
+          <h3>Grafik Skor Psikotes</h3>
+          <canvas id="psikotesChart" width="320" height="160"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Latihan Mandiri Militer. Website latihan mandiri, bukan lembaga resmi militer.
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto - Latihan Mandiri Militer</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="site-logo">BINJASMIL1318</div>
+    <h1>Galeri Foto</h1>
+    <nav role="navigation" aria-label="Navigasi utama">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="psikotes.html">Psikotes</a>
+      <a href="edukasi.html">Edukasi</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html" class="active">Galeri</a>
+      <button id="darkModeBtn" class="btn btn-dark-toggle">Dark Mode</button>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Galeri Latihan Mandiri</h2>
+    <form id="formFoto" class="galeri-form">
+      <input type="file" id="fotoInput" accept="image/*" required>
+      <input type="text" id="fotoCatatan" placeholder="Catatan singkat (opsional)">
+      <button type="submit" class="btn">Upload Foto</button>
+      <button type="button" id="hapusSemuaBtn" class="btn" style="background:#e57373;color:#fff;">Hapus Semua Foto</button>
+    </form>
+    <div id="galeriGrid" class="card-grid"></div>
+  </section>
+  <footer>
+    &copy; 2025 Latihan Mandiri Militer. Website latihan mandiri, bukan lembaga resmi militer.
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/galeri.js"></script>
+</body>
+</html>
